@@ -12,9 +12,6 @@ Need to work on:
   - Double
   - Splitting
   - Checking if dealers have blackjack
-- Scoring
-- Adding bet
-
 
 Finished:
 
@@ -25,3 +22,6 @@ Finished:
 - Player busted > 21
 - Dealer busted > 21
 - Determining who won
+- Scoring
+- Adding bet
+- Moving the game into function so can be played multiple times
