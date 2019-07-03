@@ -44,12 +44,21 @@ def dealer_card(x):
     return first
 
 #Checking blackjack
+def blackjack(total):
+    return True if total == 21 else False
 
-#Offering insurance
+#Blackjack odds
+def blackjack_odds():
+    pass
+
+#Dealer showing an A and offer insurance
+
+#Dealer showing a high card
 
 #Double
 
 #Splitting
+
 
 #indicator for dealers to hit according to the table's rules
 def dealer_min(dealer_total):
@@ -74,6 +83,12 @@ def play_game(n, amount):
 
         print("Player total card is : %d" %player_total)
 
+        #Player Blackjack
+        if blackjack(player_total):
+            print("Blackjack!")
+            win += 1
+            continue
+
         #DEALERS showing first card
         dealer_hand = [deal(cards) for i in range(2)]
 
@@ -82,6 +97,12 @@ def play_game(n, amount):
         print("First card is : %s" %dealer_hand[0])
 
         dealer_first = dealer_card(dealer_hand[0])
+        dealer_total = total_cards(dealer_hand)
+
+        if blackjack(dealer_total):
+            print("Player lost!")
+            loss += 1
+            continue
 
         #Players hit if total less than 12 or if between 12 - 17 and dealer showing 7 or greater
         while player_total < 12 or player_total < 17 and dealer_first > 6:
@@ -137,14 +158,17 @@ def play_game(n, amount):
 
 cards = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 
-amount = int(input("How much do you want to change? "))
-no_games = int(input("How many games? "))
+play_game(1,1)
 
-blockPrint()
-balance = play_game(no_games, amount)
-
-enablePrint()
-print("Starting money = %d" %amount)
-print("Balance = %d" %balance[0])
-print("Total Win = %d" %balance[1])
-print("Total Loss = %d" %balance[2])
+# amount = int(input("How much do you want to change? "))
+# no_games = int(input("How many games? "))
+#
+# blockPrint()
+# balance = play_game(no_games, amount)
+#
+# enablePrint()
+# print("Starting money = %d" %amount)
+# print("Balance = %d" %balance[0])
+# print("Total Win = %d" %balance[1])
+# print("Total Loss = %d" %balance[2])
+# print("Win percentage = " + str(balance[1]/no_games*100) + "%")
