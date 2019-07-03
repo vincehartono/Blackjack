@@ -8,10 +8,9 @@ Thanks!
 Need to work on:
 
 - Strategy used in blackjack game
-  - Offering Insurance
+  - Offering Insurance if dealer showing A
   - Double
   - Splitting
-  - Checking if dealers have blackjack
 
 Finished:
 
@@ -25,3 +24,4 @@ Finished:
 - Scoring
 - Adding bet
 - Moving the game into function so can be played multiple times
+- Adding blackjack to both (dealer if show high card)
