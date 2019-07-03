@@ -7,14 +7,21 @@ Thanks!
 
 Need to work on:
 
-- function to define "A" as 1 or 11
-- Dealer busted
-- Comparing player vs dealer
 - Strategy used in blackjack game
+  - Offering Insurance
+  - Double
+  - Splitting
+  - Checking if dealers have blackjack
+- Scoring
+- Adding bet
+
 
 Finished:
 
 - random draw
 - convert J, Q, K, A to integer
+- A's as 1 and 11
 - dealer should hit until 17
 - Player busted > 21
+- Dealer busted > 21
+- Determining who won
