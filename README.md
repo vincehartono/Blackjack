@@ -7,6 +7,7 @@ Thanks!
 
 Need to work on:
 
+- Decks instead of random cards
 - Strategy used in blackjack game
   - Offering Insurance if dealer showing A
   - Double
